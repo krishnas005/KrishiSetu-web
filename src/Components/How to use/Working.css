@@ -1,0 +1,80 @@
+.how-to-use {
+  padding: 2rem 2rem;
+  background-color: rgb(195, 223, 203);
+  color: black;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.steps-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+  gap: 1rem;
+  
+}
+
+.steps-list li {
+  font-size: 1.2rem;
+
+  line-height: 1.6;
+}
+
+.steps-list li strong {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.steps-list li p {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.steps-inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  gap: 1rem; /* Equal spacing between images */
+  flex-wrap: wrap; /* Allow images to wrap if needed */
+  margin-top: 1rem; /* Add margin to separate from text */
+}
+
+.steps-inner-container img {
+  width: 400px; /* Set a fixed width for all images */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Set a maximum height to maintain uniformity */
+  object-fit: contain; /* Ensure the images fit within their container */
+}
+
+.how-to-use-container {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}

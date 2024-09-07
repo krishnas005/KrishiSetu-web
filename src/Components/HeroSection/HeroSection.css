@@ -1,0 +1,84 @@
+/* HeroSection.css */
+
+/* Ensure the navbar height is consistent */
+:root {
+  --navbar-height: 4rem; /* Update this if the height of your navbar changes */
+}
+
+.hero-container {
+    height: calc(100vh - var(--navbar-height)); /* Adjust height to be screen height minus navbar height */
+    background-image: url('src/assets/hImg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    /* margin-bottom: 2rem; */
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 1200px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    color: #f0f0f0;
+    margin-bottom: 1.8rem;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* .app-store {
+    background-color: green; 
+    padding: 4;
+}
+
+.app-store:hover {
+    background-color: #005b9e;
+} */
+
+.google-play {
+    background-color: grey; 
+}
+
+.google-play:hover {
+    background-color: #2c8f44;
+}
+
+/* Optional: Add a semi-transparent overlay for better text visibility */
+.hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+    z-index: 1;
+}

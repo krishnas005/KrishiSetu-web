@@ -1,0 +1,125 @@
+/* Testimonial section */
+.testimonial-section {
+  padding: 2rem; /* Added padding of 2rem to all sides */
+  background-color: white;
+  color: #1a202c;
+}
+
+.testimonial-section.dark {
+  background-color: #0b1727;
+  color: white;
+}
+
+/* Heading and paragraph */
+.testimonial-heading-container {
+  width: 66.666667%;
+  max-width: 640px;
+}
+
+.testimonial-heading {
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+
+.testimonial-paragraph {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* Controls */
+.testimonial-controls {
+  width: 33.333333%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.testimonial-button {
+  font-size: 18px;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0.75;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 16px;
+  transition: opacity 0.3s;
+}
+
+.testimonial-button:hover {
+  opacity: 1;
+}
+
+/* Testimonial items */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.testimonial-item-wrapper {
+  grid-column: span 6;
+}
+
+@media (min-width: 768px) {
+  .testimonial-item-wrapper {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-item-wrapper {
+    grid-column: span 2;
+  }
+}
+
+.testimonial-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.testimonial-item.dark {
+  background-color: #1a202c;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-4px);
+}
+
+/* Rating */
+.testimonial-rating {
+  margin-bottom: 24px;
+}
+
+.testimonial-content {
+  opacity: 0.5;
+  margin-bottom: 24px;
+  line-height: 1.75;
+}
+
+/* Author */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  border-radius: 50%;
+  border: 2px solid transparent;
+  width: 47px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.testimonial-author-name {
+  font-size: 20px;
+  font-weight: bold;
+}
