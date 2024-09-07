@@ -10,7 +10,6 @@ const HeroSection = () => {
         <p>A Direct Link Between Farmers and Consumers, Reducing Middlemen.</p>
 
         <div className=" ">
-          {/* App Store Button */}
           <a href="/guide" className="bg-green-600 hover:bg-green-400 rounded-md py-2 px-2 mr-4">
             Read How It Works
           </a>
